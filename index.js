@@ -1,15 +1,37 @@
-let music = {
+console.log("loaded");
+let song = {
     title : "",
     leng : 0,
 }
-class Music {
+class Song {
     constructor(title, leng){
         this.title = title;
-        that.leng = leng;
+        this.leng = leng;
     }
-    get 
+    get title(){
+        return this.#title;
+    }
+    set title(title){
+        this.#title = title;
+    }
+    get leng(){
+        return this.#leng;
+    }
+    set leng(leng){
+        if(typeof leng === "number" && leng >= 0){
+            this.#hossz = hossz;
+        }else{
+            throw new Error("Hossza 0-nál nagyobb számnak kell lennie");
+        }    
+    }
+    static totallength(zenehossz){
+        
+    }
 }
-const tracks = [];
-addtrack(){
-
+let fisrtsong = new Song(title,leng);
+let i = 0;
+const songs = [];
+function addsong(){
+    document.getElementById("titleofsong").value;
+    document.getElementById("lengthofsong").value;
 }
